@@ -6,8 +6,8 @@ const FuturePlans = () => {
     <div className='bg-black flex flex-col items-center gap-2 px-4 lg:px-10 py-4'>
         <h1 className='text-red-600 text-center text-2xl font-bold pb-2'>Future Plans</h1>
 
-        <div className='flex gap-2 w-2/3 justify-between items-center'>
-            <div className='flex flex-col w-1/2'>
+        <div className='flex flex-col lg:flex-row gap-2 w-2/3 justify-between items-center'>
+            <div className='flex flex-col lg:w-1/2'>
             <h1 className='text-gray-400 text-start font-bold'>Phase 1</h1>
                 <p className='text-gray-400 text-start text-xs lg:text-sm'>Launch a basic version with auditing and optimization features.
                 Focus on a user-friendly interface for smart contract uploads, audit results, and optimization feedback.</p>
@@ -20,9 +20,9 @@ const FuturePlans = () => {
                 <img className='w-[20rem]' src='/future-plans2.jpeg' />
            </div>
 
-        <div className='flex gap-2 w-2/3 justify-between items-center'>
+        <div className='flex flex-col lg:flex-row gap-2 w-2/3 justify-between items-center'>
                 <img className='w-[20rem]' src='/future-plans.jpeg' />
-            <div className='flex flex-col w-1/2'>
+            <div className='flex flex-col lg:w-1/2'>
             <h1 className='text-gray-400 text-start font-bold'>Phase 3</h1>
                 <p className='text-gray-400 text-start text-xs lg:text-sm'>AI-driven predictive modeling for contract vulnerabilities before they occur.
                 Full enterprise-level solutions with API integration for large-scale blockchain companies.</p>

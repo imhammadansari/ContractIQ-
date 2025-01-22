@@ -4,35 +4,8 @@ import axios from "axios";
 import MobileNavbar from "./MobileNavbar";
 
 const Header = () => {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [showMobileNavbar, setShowMobileNavbar] = useState(false);
   const navigate = useNavigate();
-
-  useEffect(() => {
-    const checkAuthStatus = async () => {
-      try {
-        const response = await axios.get("http://localhost:8080/users/check-login");
-        setIsLoggedIn(response.data.isLoggedIn);
-      } catch (error) {
-        setIsLoggedIn(false);
-      }
-    };
-    checkAuthStatus();
-  }, []);
-
-  const handleLogout = async () => {
-    try {
-      await axios.get("http://localhost:8080/users/logout");
-      setIsLoggedIn(false);
-      navigate("/login");
-    } catch (error) {
-      console.error("Error logging out:", error);
-    }
-  };
-
-  const handleCategorySelect = (category) => {
-    navigate(`/products/${category}`);
-  };
 
   const toggleMobileNavbar = () => {
     setShowMobileNavbar((prev) => !prev);
@@ -42,25 +15,32 @@ const Header = () => {
     <div className="w-full">
       <div className="w-full bg-black lg:px-10">
         {/* Mobile Navbar */}
-        <div className="flex items-center justify-between pl-4 py-4 lg:hidden">
-          <div className="flex items-center gap-4">
-            <img
-              className="w-6 cursor-pointer"
-              src="/category.png"
-              alt="Menu"
-              onClick={toggleMobileNavbar}
-            />
-            <Link to="/" className="text-lg text-white">
-              Logo.
-            </Link>
+        <div className="flex items-center justify-between px-4 py-4 lg:hidden">
+          <div className="flex items-center">
+            
+            <img className="w-16" src='/logo1.png' />
           </div>
 
-          <div className="flex px-4 items-center gap-4">
-            <img className="w-6" src="/user.png" alt="User" />
-            <Link to="/cart">
-              <img className="w-6" src="/shopping-cart.png" alt="Cart" />
-            </Link>
+          <div className="flex items-center ">
+          <ul className="flex items-center text-gray-400 pt-1 gap-4 text-xs">
+              <li>
+                <Link to="">Telegram</Link>
+              </li>
+              <li>
+                <Link to="">Twitter</Link>
+              </li>
+              <li>
+                <Link to="">Whitepaper</Link>
+              </li>
+              <li>
+                <Link to="">E-mail</Link>
+              </li>
+            </ul>
           </div>
+
+        
+
+
         </div>
 
         {/* Desktop Navbar */}
@@ -68,7 +48,7 @@ const Header = () => {
           {/* Left: Logo */}
           <div className="flex flex-grow justify-start items-center">
             <h1 className="md:text-xl lg:text-2xl xl:text-2xl text-gray-400">
-              <Link to="/">Logo.</Link>
+              <img className="w-20" src='/logo1.png' />
             </h1>
           </div>
 

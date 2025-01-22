@@ -3,11 +3,11 @@ import React from 'react'
 const Footer = () => {
     return (
         <>
-            <div className='w-full border-t border-black border-opacity-30 bg-black px-4 lg:px-28 py-4'>
+            <div className='w-full border-t border-black border-opacity-30 bg-black px-4 lg:px-20 py-4'>
                 <div className='flex flex-col lg:flex-row gap-4 lg:gap-20'>
 
                     <div className='flex flex-col lg:w-[20rem]'>
-                        <h1 className='font-bold text-start text-red-600 text-base md:text-lg lg:text-xl'>Logo</h1>
+                    <img className="w-20 lg:w-24" src='/logo1.png' />
                         
                     </div>
 
@@ -15,7 +15,7 @@ const Footer = () => {
 
                     <h1 className='font-bold text-sm md:text-base text-red-600 lg:text-base text-start lg:pb-2'>ContractIQ </h1>
 
-                        <div className='flex lg:flex-col text-xs lg:text-base text-gray-400 text-start gap-14 lg:gap-0'>
+                        <div className='flex lg:flex-col text-xs lg:text-base text-gray-400 text-start gap-4 lg:gap-0'>
                         <p>Intoduction</p>
                         <p>Features</p>
                         <p>Our Techlogy</p>
@@ -27,11 +27,11 @@ const Footer = () => {
                     </div>
 
 
-                    <div className='hidden md:flex flex-col items-start'>
+                    <div className='flex flex-col items-start'>
 
                     <h1 className='font-bold text-sm md:text-base text-red-600 lg:text-base text-start lg:pb-2'>ContractIQ </h1>
 
-                    <div className='flex lg:flex-col text-xs lg:text-base text-gray-400 text-start gap-14 lg:gap-0'>
+                    <div className='flex lg:flex-col text-xs lg:text-base text-gray-400 text-start gap-4 lg:gap-0'>
                         <p>Intoduction</p>
                         <p>Features</p>
                         <p>Our Techlogy</p>

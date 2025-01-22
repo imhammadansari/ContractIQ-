@@ -7,7 +7,7 @@ const RevenueModel = () => {
         <h1 className='text-2xl font-bold text-red-600 text-center pb-4'>Revenue Model</h1>
 
         <div> {/*Child Div */}
-                <div className='flex gap-4'> {/*Marquee Parent Div */}
+                <div className='flex flex-col lg:flex-row gap-4'> {/*Marquee Parent Div */}
                 
                 <div className='flex flex-col gap-2 w-[17rem] px-2 py-1 border border-gray-400 overflow-hidden'>
                     <h1 className='text-gray-400 text-center'>Freemium Model</h1>
