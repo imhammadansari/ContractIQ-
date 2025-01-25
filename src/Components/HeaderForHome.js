@@ -12,7 +12,7 @@ const HeaderForHome = () => {
   return (
     <div className="w-full">
       <div
-        className="w-full h-[120vh] bg-cover bg-center"
+        className="w-full h-[90vh] lg:h-[120vh] bg-cover bg-center"
         style={{
           backgroundImage: "url('/banner-01-01.jpg')",
         }}

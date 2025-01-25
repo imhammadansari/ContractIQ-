@@ -110,7 +110,7 @@ const Contact = () => {
           </div>
           {/* Form Div */}
 
-          <div className="flex flex-col gap-4 items-center">
+          <div className="flex flex-col gap-4 pt-4 lg:pt-0 items-center">
             {/* Image Div */}
             <div className="w-[25rem] lg:w-[28rem]">{View}</div>
           </div>
