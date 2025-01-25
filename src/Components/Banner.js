@@ -3,8 +3,8 @@ import React from 'react'
 const Banner = () => {
   return (
     <>
-    <div className='w-full px-4 md:px-8 lg:px-10 py-4' style={{
-            background: "linear-gradient(to right, #f2f2f4, #cccccc)",
+    <div id="introduction" className='w-full px-4 md:px-8 lg:px-10 py-4' style={{
+            background: "linear-gradient(to right, #e8e8ea, #f0f0f1, #ffffff)",
         }}> {/*Parent div*/}
 
         <div className='md:px-4 py-2 flex flex-col w-full items-center'> {/*Child div*/}

@@ -3,8 +3,8 @@ import React from 'react'
 const CoreFeatures = () => {
   return (
     <>
-    <div className='flex flex-col gap-4 px-4 lg:px-28 py-4' style={{
-            background: "linear-gradient(to right, #f2f2f4, #cccccc)",
+    <div id="features" className='flex flex-col gap-4 px-4 lg:px-28 py-4' style={{
+            background: "linear-gradient(to right, #e8e8ea, #f0f0f1, #ffffff)",
         }}> {/*Parent Div */}
       
       <h1 className='text-xl lg:text-2xl text-gray-600 text-center font-bold'>Core Features</h1>

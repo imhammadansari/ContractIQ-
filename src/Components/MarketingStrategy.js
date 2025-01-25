@@ -3,7 +3,7 @@ import React from 'react';
 const MarketingStrategy = () => {
   return (
     <>
-      <div className='bg-black px-4 flex flex-col gap-4 lg:px-10 py-4'> {/* Parent Div */}
+      <div id="marketing" className='bg-black px-4 flex flex-col gap-4 lg:px-10 py-4'> {/* Parent Div */}
         <h1 className='text-xl lg:text-2xl text-center text-red-600 font-bold pb-2'>Marketing Strategy</h1>
         
         <div className='flex flex-col lg:flex-row gap-10 px-2 lg:px-4 justify-center'> {/* Row Container */}

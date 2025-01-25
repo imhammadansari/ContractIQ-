@@ -1,15 +1,16 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
     return (
         <>
-            <div className='w-full border-t border-black border-opacity-30 px-4 lg:px-20 py-4' style={{
-            background: "linear-gradient(to right, #f2f2f4, #cccccc)",
+            <div className='w-full border-t border-black border-opacity-30 px-8 lg:px-20 py-4' style={{
+            background: "linear-gradient(to right, #e8e8ea, #f0f0f1, #ffffff)",
         }}>
-                <div className='flex flex-col lg:flex-row gap-4 lg:gap-20'>
+                <div className='hidden lg:flex lg:flex-row gap-4 justify-between'>
 
                     <div className='flex flex-col lg:w-[20rem]'>
-                    <img className="w-20 lg:w-24" src='/logo1.png' />
+                    <Link to='/'><img className="w-20 lg:w-24" src='/logo1.png' /></Link>
                         
                     </div>
 
@@ -18,12 +19,11 @@ const Footer = () => {
                     <h1 className='font-bold text-sm md:text-base text-gray-600 lg:text-base text-start lg:pb-2'>ContractIQ </h1>
 
                         <div className='flex lg:flex-col text-xs lg:text-base text-gray-600 text-start gap-4 lg:gap-0'>
-                        <p>Intoduction</p>
-                        <p>Features</p>
-                        <p>Our Techlogy</p>
-                        <p>Revenue Models</p>
-                        <p>Marketing Strategy</p>
-
+                        <a href="#introduction">Introduction</a>
+        <a href="#features">Features</a>
+        <a href="#technology">Our Technology</a>
+        <a href="#revenue">Revenue Models</a>
+        <a href="#marketing">Marketing Strategy</a>
                         </div>
 
                     </div>
@@ -34,11 +34,9 @@ const Footer = () => {
                     <h1 className='font-bold text-sm md:text-base text-gray-600 lg:text-base text-start lg:pb-2'>ContractIQ </h1>
 
                     <div className='flex lg:flex-col text-xs lg:text-base text-gray-600 text-start gap-4 lg:gap-0'>
-                        <p>Intoduction</p>
-                        <p>Features</p>
-                        <p>Our Techlogy</p>
-                        <p>Revenue Models</p>
-                        <p>Marketing Strategy</p>
+                        <p>Home</p>
+                        <p>About Us</p>
+                        <p>Contact Us</p>
                         </div>
 
                     </div>
@@ -58,6 +56,60 @@ const Footer = () => {
     </div>
 </div>
 
+
+</div>
+
+<div className='lg:hidden flex flex-col gap-4'>
+
+                    <div className='flex justify-between'>
+                    <div className='flex flex-col justify-center lg:w-[20rem]'>
+                    <Link to='/'><img className="w-20 lg:w-24" src='/logo1.png' /></Link>
+                        
+                    </div>
+
+                    <div className='flex flex-col items-start'>
+
+                    <h1 className='font-bold text-sm md:text-base text-gray-600 lg:text-base text-start pb-1 lg:pb-2'>ContractIQ </h1>
+
+                        <div className='flex flex-col text-xs lg:text-base text-gray-600 text-start gap-1'>
+                        <p>Intoduction</p>
+                        <p>Features</p>
+                        <p>Our Techlogy</p>
+                        <p>Revenue Models</p>
+                        <p>Marketing Strategy</p>
+                        </div>
+
+                    </div>
+
+                    </div>
+
+                    <div className='flex justify-between'>
+                    <div className='flex flex-col items-start'>
+
+                    <h1 className='font-bold text-sm md:text-base text-gray-600 lg:text-base text-start pb-1'>ContractIQ </h1>
+
+                    <div className='flex flex-col text-xs lg:text-base text-gray-600 text-start gap-1'>
+                        <Link to='/'>Home</Link>
+                        <Link to='/about-us'>About Us</Link>
+                        <Link to='/contact-us'>Contact Us</Link>
+                        </div>
+
+                    </div>
+
+                    <div className='flex flex-col items-start'>
+
+<h1 className='font-bold text-sm md:text-base text-gray-600 lg:text-base text-start pb-1 lg:pb-2'>Social Media</h1>
+
+    <div className='flex flex-col text-xs lg:text-base text-gray-600 text-start gap-1'>
+    <p>Facebook</p>
+    <p>Instagram</p>
+    <p>Twitter</p>
+    </div>
+
+
+</div>
+
+                    </div>
 
 </div>
                 <p className='text-center pt-4 text-xs md:text-sm lg:text-base text-gray-600'>©Copyright-2024 - Created by Hammad Ansari</p>

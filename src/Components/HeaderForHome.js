@@ -34,17 +34,17 @@ const HeaderForHome = () => {
                 <Link to="/contact-us">Contact Us</Link>
               </li>
               <li>
-                <Link to="">Whitepaper</Link>
+                <Link to="">Twiitter</Link>
               </li>
               <li>
-                <Link to="">E-mail</Link>
+                <Link to="">Facebook</Link>
               </li>
             </ul>
           </div>
         </div>
 
         {/* Desktop Navbar */}
-        <div className="hidden lg:flex w-full items-center px-4 py-4 text-lg lg:text-xl xl:text-xl">
+        <div className="hidden lg:flex w-full items-center px-14 py-4 text-lg lg:text-xl xl:text-xl">
           {/* Left: Logo */}
           <div className="flex flex-grow justify-start items-center">
             <h1 className="md:text-xl lg:text-2xl xl:text-2xl text-gray-600">
@@ -64,10 +64,10 @@ const HeaderForHome = () => {
                 <Link to="/contact-us">Contact Us</Link>
               </li>
               <li>
-                <Link to="">Whitepaper</Link>
+                <Link to="">Twitter</Link>
               </li>
               <li>
-                <Link to="">E-mail</Link>
+                <Link to="">Facebook</Link>
               </li>
             </ul>
           </div>

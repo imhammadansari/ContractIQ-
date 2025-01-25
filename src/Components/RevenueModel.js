@@ -3,8 +3,8 @@ import React from 'react'
 const RevenueModel = () => {
   return (
     <>
-    <div className='flex flex-col items-center px-4 lg:px-10 py-4' style={{
-            background: "linear-gradient(to right, #f2f2f4, #cccccc)",
+    <div id="revenue" className='flex flex-col items-center px-4 lg:px-10 py-4' style={{
+            background: "linear-gradient(to right, #e8e8ea, #f0f0f1, #ffffff)",
         }}> {/*Parent Div */}
         <h1 className='text-2xl font-bold text-gray-600 text-center pb-4'>Revenue Model</h1>
 

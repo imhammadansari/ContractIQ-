@@ -13,7 +13,7 @@ const Header = () => {
 
   return (
     <div className="w-full">
-      <div className="w-full bg-black lg:px-10">
+      <div className="w-full lg:px-10" style={{background: "linear-gradient(to right, #e8e8ea, #f0f0f1, #ffffff)"}}>
       <div className="flex items-center justify-between px-4 py-4 lg:hidden">
           <div className="flex items-center">
             <Link to='/'>
@@ -30,10 +30,10 @@ const Header = () => {
                 <Link to="/contact-us">Contact Us</Link>
               </li>
               <li>
-                <Link to="">Whitepaper</Link>
+                <Link to="">Twitter</Link>
               </li>
               <li>
-                <Link to="">E-mail</Link>
+                <Link to="">Facebook</Link>
               </li>
             </ul>
           </div>
@@ -60,10 +60,10 @@ const Header = () => {
                 <Link to="/contact-us">Contact Us</Link>
               </li>
               <li>
-                <Link to="">Whitepaper</Link>
+                <Link to="">Twitter</Link>
               </li>
               <li>
-                <Link to="">E-mail</Link>
+                <Link to="">Facebook</Link>
               </li>
             </ul>
           </div>

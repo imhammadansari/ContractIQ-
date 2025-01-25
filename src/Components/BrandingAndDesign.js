@@ -4,7 +4,7 @@ const BrandingAndDesign = () => {
   return (
     <>
     <div className='flex flex-col px-4 lg:px-10 py-4' style={{
-            background: "linear-gradient(to right, #f2f2f4, #cccccc)",
+            background: "linear-gradient(to right, #e8e8ea, #f0f0f1, #ffffff)",
         }}> {/*Parent Div */}
         <h1 className='font-bold text-2xl text-gray-600 text-center pb-4'>Branding & Design</h1>
         <div className='flex flex-col lg:flex-row gap-4 justify-center'> {/*Child Div */}
