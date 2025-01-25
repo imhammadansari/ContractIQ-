@@ -1,5 +1,4 @@
 import React from 'react'
-import Header from '../Components/Header'
 import Footer from '../Components/Footer'
 import Banner from '../Components/Banner'
 import BelowTrustedBy from '../Components/BelowTrustedBy'
@@ -9,11 +8,13 @@ import RevenueModel from '../Components/RevenueModel'
 import MarketingStrategy from '../Components/MarketingStrategy'
 import FuturePlans from '../Components/FuturePlans'
 import BrandingAndDesign from '../Components/BrandingAndDesign'
+import HeaderForHome from '../Components/HeaderForHome'
 
 const HomePage = () => {
   return (
     <>
-    <Header />
+    <HeaderForHome />
+    {/* <BannerImage /> */}
     <Banner />
     <CoreFeatures />
     <Section /> 

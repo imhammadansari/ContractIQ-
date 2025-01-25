@@ -68,7 +68,7 @@ const MarketingStrategy = () => {
           </div>
         </div>
         
-        <div className='flex flex-col lg:flex-row gap-10 px-2 lg:px-4 justify-center'> {/* Row Container */}
+        <div className='flex flex-col lg:flex-row gap-10 px-2 lg:px-4 pb-4 justify-center'> {/* Row Container */}
           {/* First Item */}
           <div 
             className='w-full lg:w-2/5 flex flex-col px-2 py-2 text-gray-300 relative overflow-hidden' 

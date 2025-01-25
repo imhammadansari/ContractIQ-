@@ -3,12 +3,14 @@ import React from 'react'
 const BelowTrustedBy = () => {
   return (
     <>
-    <div className='flex flex-col bg-black px-4 lg:px-10 py-4 lg:py-6 justify-center items-center'> {/*Parent Div */}
-      <h1 className='text-red-600 font-bold text-2xl text-center pb-4'>Target Audience</h1>
-        <div className='hidden lg:flex lg:gap-8 text-gray-400 items-center justify-between'> {/*Child Div */}
+    <div className='flex flex-col px-4 lg:px-10 py-4 lg:py-6 justify-center items-center' style={{
+            background: "linear-gradient(to right, #f2f2f4, #cccccc)",
+        }}> {/*Parent Div */}
+      <h1 className='text-gray-600 font-bold text-2xl text-center pb-4'>Target Audience</h1>
+        <div className='hidden lg:flex lg:gap-8 text-gray-600 items-center justify-between'> {/*Child Div */}
 
             <div className='flex flex-col lg:gap-4'> {/*Image Div */}
-                <img className='w-[10rem] lg:w-[20rem]' src='/target-aud.jpg' />
+                <img className='w-[10rem] lg:w-[20rem]' src='/target-aud2.jpg' />
 
             </div> {/*Image Div */}
 
@@ -40,10 +42,10 @@ const BelowTrustedBy = () => {
 
         </div> {/*Child Div */}
 
-        <div className='flex lg:hidden text-gray-400 items-center justify-between'> {/*Child Div */}
+        <div className='flex lg:hidden text-gray-600 items-center justify-between'> {/*Child Div */}
 
             <div className='flex flex-col lg:gap-4'> {/*Image Div */}
-                <img className='w-[10rem] lg:w-[20rem]' src='/target-audience.jpeg' />
+                <img className='w-[10rem] lg:w-[20rem]' src='/target-aud2.jpg' />
 
             </div> {/*Image Div */}
 
