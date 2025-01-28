@@ -51,7 +51,7 @@ const HeaderForHome = () => {
       </div>
 
       <div
-        className="block w-full h-[90vh] bg-cover bg-center md:hidden"
+        className="block w-full h-[75vh] bg-cover bg-center md:hidden"
         style={{
           backgroundImage: "url('/banner-for-mobile.jpg')",
         }}
