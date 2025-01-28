@@ -40,19 +40,19 @@ const Header = () => {
         </div>
 
         {/* Desktop Navbar */}
-        <div className="hidden lg:flex w-full items-center px-4 py-4 text-lg lg:text-xl xl:text-xl">
+        <div className="hidden lg:flex w-full items-center px-4 pt-2 pb-4 text-lg lg:text-xl xl:text-xl">
           {/* Left: Logo */}
           <div className="flex flex-grow justify-start items-center">
             <h1 className="md:text-xl lg:text-2xl xl:text-2xl text-gray-600">
               <Link to='/'>
-                <img className="w-20" src='/logo1.png' alt="Logo" />
+                <img className="w-[6rem]" src='/logo1.png' alt="Logo" />
               </Link>
             </h1>
           </div>
 
           {/* Center: Navbar Links */}
-          <div className="flex flex-grow justify-center items-center text-gray-600">
-            <ul className="flex items-center pt-1 gap-12 text-base lg:text-lg">
+          <div className="flex flex-grow justify-end items-center text-gray-600">
+            <ul className="flex items-center gap-8 text-base lg:text-lg">
               <li>
                 <Link to="/about-us">About Us</Link>
               </li>
@@ -68,11 +68,6 @@ const Header = () => {
             </ul>
           </div>
 
-          <div>
-            <h1 className="text-gray-600 text-sm lg:text-base border border-gray-600 rounded px-2 py-1">
-              ContractIQ Bot
-            </h1>
-          </div>
         </div>
       </div>
 
