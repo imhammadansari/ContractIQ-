@@ -14,8 +14,6 @@ const HomePage = () => {
   return (
     <>
     <HeaderForHome />
-    {/* <BannerImage /> */}
-    <Banner />
     <CoreFeatures />
     <Section /> 
     <RevenueModel />

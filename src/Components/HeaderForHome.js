@@ -12,51 +12,26 @@ const HeaderForHome = () => {
   return (
     <div className="w-full">
       <div
-        className="w-full h-[90vh] lg:h-[120vh] bg-cover bg-center"
+        className="hidden md:block w-full h-[90vh] lg:h-[125vh] bg-cover bg-center"
         style={{
-          backgroundImage: "url('/banner-01-01.jpg')",
+          backgroundImage: "url('/banner-for-devices.jpg')",
         }}
       >
-        {/* Mobile Navbar */}
-        <div className="flex items-center justify-between px-4 py-4 lg:hidden">
-          <div className="flex items-center">
-            <Link to='/'>
-              <img className="w-16" src='/logo1.png' alt="Logo" />
-            </Link>
-          </div>
-
-          <div className="flex items-right">
-            <ul className="flex items-right text-gray-600 pt-1 gap-4 text-xs">
-              <li>
-                <Link to="/about-us">About Us</Link>
-              </li>
-              <li>
-                <Link to="/contact-us">Contact Us</Link>
-              </li>
-              <li>
-                <Link to="">Twiitter</Link>
-              </li>
-              <li>
-                <Link to="">Facebook</Link>
-              </li>
-            </ul>
-          </div>
-        </div>
 
         {/* Desktop Navbar */}
         <div className="hidden lg:flex w-full items-center px-14 py-4 text-lg lg:text-xl xl:text-xl">
           {/* Left: Logo */}
           <div className="flex flex-grow justify-start items-center">
-            <h1 className="md:text-xl lg:text-2xl xl:text-2xl text-gray-600">
+            <h1 className="md:text-xl lg:text-2xl xl:text-2xl text-gray-800">
               <Link to='/'>
-                <img className="w-20" src='/logo1.png' alt="Logo" />
+                <img className="w-[4rem]" src='/logo1.png' alt="Logo" />
               </Link>
             </h1>
           </div>
 
           {/* Center: Navbar Links */}
-          <div className="flex flex-grow justify-center items-center text-gray-600">
-            <ul className="flex items-center pt-1 gap-12 text-base lg:text-lg">
+          <div className="flex flex-grow justify-end text-gray-800">
+            <ul className="flex gap-12 text-base lg:text-lg">
               <li>
                 <Link to="/about-us">About Us</Link>
               </li>
@@ -72,13 +47,42 @@ const HeaderForHome = () => {
             </ul>
           </div>
 
-          <div>
-            <h1 className="text-gray-600 text-sm lg:text-base border border-gray-600 rounded px-2 py-1">
-              ContractIQ Bot
-            </h1>
-          </div>
         </div>
       </div>
+
+      <div
+        className="block w-full h-[120vh] bg-cover bg-center md:hidden"
+        style={{
+          backgroundImage: "url('/banner-for-mobile.jpg')",
+        }}
+      >
+
+      {/* Mobile Navbar */}
+        <div className="flex items-center justify-between px-4 py-4 lg:hidden">
+          <div className="flex items-center">
+            <Link to='/'>
+              <img className="w-16" src='/logo1.png' alt="Logo" />
+            </Link>
+          </div>
+
+          <div className="flex items-right">
+            <ul className="flex items-right text-gray-800 pt-1 gap-4 text-xs">
+              <li>
+                <Link to="/about-us">About</Link>
+              </li>
+              <li>
+                <Link to="/contact-us">Contact</Link>
+              </li>
+              <li>
+                <Link to="">Twiitter</Link>
+              </li>
+              <li>
+                <Link to="">Facebook</Link>
+              </li>
+            </ul>
+          </div>
+        </div>
+        </div>
 
       {/* Mobile Navbar */}
       {showMobileNavbar && (
