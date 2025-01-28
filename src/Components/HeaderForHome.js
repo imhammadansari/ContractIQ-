@@ -12,26 +12,26 @@ const HeaderForHome = () => {
   return (
     <div className="w-full">
       <div
-        className="hidden md:block w-full h-[90vh] lg:h-[125vh] bg-cover bg-center"
+        className="hidden md:block w-full h-[90vh] lg:h-[128vh] bg-cover bg-center"
         style={{
           backgroundImage: "url('/banner-for-devices.jpg')",
         }}
       >
 
         {/* Desktop Navbar */}
-        <div className="hidden lg:flex w-full items-center px-14 py-4 text-lg lg:text-xl xl:text-xl">
+        <div className="hidden lg:flex w-full items-center px-14 pt-2 pb-4 text-lg lg:text-xl xl:text-xl">
           {/* Left: Logo */}
           <div className="flex flex-grow justify-start items-center">
             <h1 className="md:text-xl lg:text-2xl xl:text-2xl text-gray-800">
               <Link to='/'>
-                <img className="w-[4rem]" src='/logo1.png' alt="Logo" />
+                <img className="w-[6rem]" src='/logo1.png' alt="Logo" />
               </Link>
             </h1>
           </div>
 
           {/* Center: Navbar Links */}
           <div className="flex flex-grow justify-end text-gray-800">
-            <ul className="flex gap-12 text-base lg:text-lg">
+            <ul className="flex gap-8 text-base lg:text-lg">
               <li>
                 <Link to="/about-us">About Us</Link>
               </li>
