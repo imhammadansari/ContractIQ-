@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import {LazzyLoadImage} from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const MobileNavbar = ({ onClose }) => {
   return (
@@ -8,7 +10,7 @@ const MobileNavbar = ({ onClose }) => {
         <div className="w-[18rem] h-screen bg-white flex flex-col">
           <div className="w-full h-[6rem] justify-center px-4 py-2 bg-black flex flex-col gap-2 bg-opacity-30">
             <div className="flex justify-between">
-              <img className="w-12" src="Avatar.png" alt="Avatar" />
+              <LazzyLoadImage className="w-12" src="Avatar.png" alt="Avatar" effect='blur' loading='lazy' />
               
             </div>
             <h1 className="flex items-start">

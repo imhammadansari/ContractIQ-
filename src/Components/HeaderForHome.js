@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import MobileNavbar from "./MobileNavbar";
+import {LazzyLoadImage} from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const HeaderForHome = () => {
   const [showMobileNavbar, setShowMobileNavbar] = useState(false);
@@ -11,7 +13,7 @@ const HeaderForHome = () => {
 
   return (
     <div className="w-full">
-      <div
+      <div loading='lazy'
         className="hidden md:block w-full h-[90vh] lg:h-[128vh] bg-cover bg-center"
         style={{
           backgroundImage: "url('/banner-for-devices.jpg')",
@@ -24,7 +26,7 @@ const HeaderForHome = () => {
           <div className="flex flex-grow justify-start items-center">
             <h1 className="md:text-xl lg:text-2xl xl:text-2xl text-gray-800">
               <Link to='/'>
-                <img className="w-[6rem]" src='/logo1.png' alt="Logo" />
+                <LazzyLoadImage className="w-[6rem]" src='/logo1.png' alt="Logo" effect='blur' loading='lazy'/>
               </Link>
             </h1>
           </div>
@@ -61,7 +63,7 @@ const HeaderForHome = () => {
         <div className="flex items-center justify-between px-4 py-4 lg:hidden">
           <div className="flex items-center">
             <Link to='/'>
-              <img className="w-16" src='/logo1.png' alt="Logo" />
+              <LazzyLoadImage className="w-16" src='/logo1.png' alt="Logo" effect='blur' loading='lazy'/>
             </Link>
           </div>
 

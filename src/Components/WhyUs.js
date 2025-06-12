@@ -1,4 +1,6 @@
-import React from 'react'
+import React from 'react';
+import {LazzyLoadImage} from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const WhyUs = () => {
   return (
@@ -19,7 +21,7 @@ const WhyUs = () => {
         </div> {/*Content Div*/}
 
         <div> {/*Image Section*/}
-            <img className='lg:w-[23rem]' src='/why-us.jpg' />
+            <LazzyLoadImage className='lg:w-[23rem]' src='/why-us.jpg' effect='blur' loading='lazy' />
         </div> {/*Image Section*/}
         </div> {/*Child Div*/}
     </div> {/*Parent Div*/}

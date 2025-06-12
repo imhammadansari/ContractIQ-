@@ -1,4 +1,6 @@
-import React from 'react'
+import React from 'react';
+import {LazzyLoadImage} from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const WhatWeDo = () => {
   return (
@@ -9,7 +11,7 @@ const WhatWeDo = () => {
         <h1 className='text-center text-2xl pb-2 font-bold text-gray-600'>What We Do</h1>
         <div className='flex flex-col lg:flex-row gap-4 lg:gap-20 justify-center items-center'> {/*Child Div*/}
         <div className='flex items-center justify-center'> {/*Image Section*/}
-            <img className='lg:w-[23rem]' src='/what-we-do-01.jpg' />
+            <LazzyLoadImage className='lg:w-[23rem]' src='/what-we-do-01.jpg' effect='blur' loading='lazy' />
         </div> {/*Image Section*/}
         <div className='lg:w-1/2 text-gray-600 text-start'> {/*Content Div*/}
         <p className='text-xs md:text-sm lg:text-lg'>

@@ -1,4 +1,6 @@
 import React from 'react'
+import {LazzyLoadImage} from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const CoreFeatures = () => {
   return (
@@ -12,7 +14,7 @@ const CoreFeatures = () => {
 
           <div className='flex flex-col w-[25rem] lg:w-[30rem] items-center'> {/*Smart Contract Secton */}
             <div className='flex items-center'> {/*Image Secton */}
-            <img src='/smart-contract.png' alt='smart-contract' className='w-16 lg:w-28' />
+            <LazzyLoadImage src='/smart-contract.png' alt='smart-contract' className='w-16 lg:w-28' effect='blur' loading='lazy' />
             </div> {/*Image Secton */}
 
             <div className='flex flex-col items-center'> {/*Content Secton */}
@@ -35,7 +37,7 @@ const CoreFeatures = () => {
           
           <div className='flex flex-col w-[25rem] lg:w-[30rem] items-center'> {/*Educational Insights Secton */}
             <div className='flex items-center'> {/*Image Secton */}
-            <img src='/education-insights1.png' alt='education-insights' className='w-[3.8rem] lg:w-28' />
+            <LazzyLoadImage src='/education-insights1.png' alt='education-insights' className='w-[3.8rem] lg:w-28' effect='blur' loading='lazy' />
             </div> {/*Image Secton */}
 
             <div className='flex flex-col items-center'> {/*Content Secton */}
@@ -59,7 +61,7 @@ const CoreFeatures = () => {
 
           <div className='flex flex-col w-[25rem] lg:w-[30rem] items-center'> {/*Optimization Secton */}
             <div className='flex items-center'> {/*Image Secton */}
-            <img src='/optimization.png' alt='optimization' className='w-16 lg:w-28' />
+            <LazzyLoadImage src='/optimization.png' alt='optimization' className='w-16 lg:w-28' effect='blur' loading='lazy' />
             </div> {/*Image Secton */}
 
             <div className='flex flex-col items-center'> {/*Content Secton */}
@@ -76,7 +78,7 @@ const CoreFeatures = () => {
 
           <div className='flex flex-col w-[25rem] lg:w-[30rem] items-center'> {/*Integration with Developer Tools  Secton */}
             <div className='flex items-center'> {/*Image Secton */}
-            <img src='/integration-tools.png' alt='integration-tools' className='w-16 lg:w-28' />
+            <LazzyLoadImage src='/integration-tools.png' alt='integration-tools' className='w-16 lg:w-28' effect='blur' loading='lazy' />
             </div> {/*Image Secton */}
 
             <div className='flex flex-col items-center'> {/*Content Secton */}
@@ -101,7 +103,7 @@ const CoreFeatures = () => {
 
           <div className='flex flex-col w-[30rem] items-center'> {/*Analytics  Secton */}
             <div className='flex items-center'> {/*Image Secton */}
-            <img src='/dashboard-monitor.png' alt='Analytics' className='w-16 lg:w-28' />
+            <LazzyLoadImage src='/dashboard-monitor.png' alt='Analytics' className='w-16 lg:w-28' effect='blur' loading='lazy' />
             </div> {/*Image Secton */}
 
             <div className='flex flex-col items-center'> {/*Content Secton */}

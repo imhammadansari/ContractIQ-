@@ -1,5 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import {LazzyLoadImage} from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const Footer = () => {
     return (
@@ -10,7 +12,7 @@ const Footer = () => {
                 <div className='hidden lg:flex lg:flex-row gap-4 justify-between'>
 
                     <div className='flex flex-col lg:w-[20rem]'>
-                    <Link to='/'><img className="w-20 lg:w-24" src='/logo1.png' /></Link>
+                    <Link to='/'><LazzyLoadImage className="w-20 lg:w-24" src='/logo1.png' effect='blur' loading='lazy' /></Link>
                         
                     </div>
 
@@ -63,7 +65,7 @@ const Footer = () => {
 
                     <div className='flex justify-between'>
                     <div className='flex flex-col justify-center lg:w-[20rem]'>
-                    <Link to='/'><img className="w-20 lg:w-24" src='/logo1.png' /></Link>
+                    <Link to='/'><LazzyLoadImage className="w-20 lg:w-24" src='/logo1.png' effect='blur' loading='lazy'/></Link>
                         
                     </div>
 
