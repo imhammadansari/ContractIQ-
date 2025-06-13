@@ -1,5 +1,5 @@
 import React from 'react'
-import {LazzyLoadImage} from 'react-lazy-load-image-component';
+import {LazyLoadImage} from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const BelowTrustedBy = () => {
@@ -12,7 +12,7 @@ const BelowTrustedBy = () => {
         <div className='flex-col lg:flex-row lg:flex lg:gap-8 text-gray-600 items-center justify-between'> {/*Child Div */}
 
             <div className='flex flex-col lg:gap-4'> {/*Image Div */}
-                <LazzyLoadImage className='lg:w-[20rem]' src='/target-aud2.jpg' effect='blur' loading='lazy' />
+                <LazyLoadImage className='lg:w-[20rem]' src='/target-aud2.jpg' effect='blur' loading='lazy' />
 
             </div> {/*Image Div */}
 
@@ -47,7 +47,7 @@ const BelowTrustedBy = () => {
         <div className='hidden text-gray-600 items-center justify-between'> {/*Child Div */}
 
             <div className='flex flex-col lg:gap-4'> {/*Image Div */}
-                <LazzyLoadImage className='w-[15rem] lg:w-[20rem]' src='/target-aud2.jpg' effect='blur' loading='lazy' />
+                <LazyLoadImage className='w-[15rem] lg:w-[20rem]' src='/target-aud2.jpg' effect='blur' loading='lazy' />
 
             </div> {/*Image Div */}
 

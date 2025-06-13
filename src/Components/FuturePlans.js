@@ -1,5 +1,5 @@
 import React from 'react'
-import {LazzyLoadImage} from 'react-lazy-load-image-component';
+import {LazyLoadImage} from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const FuturePlans = () => {
@@ -21,11 +21,11 @@ const FuturePlans = () => {
                 
             </div>
             
-                <LazzyLoadImage className='w-[20rem]' src='/futureImage3.jpg' effect='blur' loading='lazy'/>
+                <LazyLoadImage className='w-[20rem]' src='/futureImage3.jpg' effect='blur' loading='lazy'/>
            </div>
 
         <div className='flex flex-col lg:flex-row gap-2 w-3/4 lg:w-2/3 justify-between items-center'>
-                <LazzyLoadImage className='w-[20rem]' src='/futureImage2.jpeg' effect='blur' loading='lazy'/>
+                <LazyLoadImage className='w-[20rem]' src='/futureImage2.jpeg' effect='blur' loading='lazy'/>
             <div className='flex flex-col lg:w-1/2'>
             <h1 className='text-gray-600 text-start font-bold'>Phase 3</h1>
                 <p className='text-gray-600 text-start text-xs lg:text-sm'>AI-driven predictive modeling for contract vulnerabilities before they occur.

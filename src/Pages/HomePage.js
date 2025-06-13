@@ -1,6 +1,5 @@
 import React from 'react'
 import Footer from '../Components/Footer'
-import Banner from '../Components/Banner'
 import BelowTrustedBy from '../Components/BelowTrustedBy'
 import Section from '../Components/Section'
 import CoreFeatures from '../Components/CoreFeatures'
